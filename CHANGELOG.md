@@ -53,7 +53,7 @@ If you have any questions on how to migrate, please ask them here on GitHub Disc
 
 ## 04-11-2022
 
-- nix: the outputs prefixed with `-debug` are now named with the `-dev` prefix. @ <https://github.com/yusdacra/nix-cargo-integration/pull/97>
+- nix: the outputs prefixed with `-debug` are now named with the `-dev` prefix. @ <https://github.com/90-008/nix-cargo-integration/pull/97>
   - This was done to have more consistency with Cargo profiles (eg. `profiles.dev` == `-dev` prefix).
 
 ## 24-09-2022

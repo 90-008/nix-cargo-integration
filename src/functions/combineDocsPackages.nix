@@ -9,7 +9,7 @@
 }: let
   docmerge = buildCrate {
     src = fetchFromGitHub {
-      owner = "yusdacra";
+      owner = "90-008";
       repo = "doc-merge";
       rev = "3c8d7b21e23b36ec4854d599d423e83614447f98";
       hash = "sha256-8uVjGWuw485z2cu3UEDlp6UccbB7jCcRvA0J1cJnQ10=";

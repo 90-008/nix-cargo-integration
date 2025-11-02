@@ -13,7 +13,7 @@
     };
 
     mk-naked-shell = {
-      url = "github:yusdacra/mk-naked-shell";
+      url = "github:90-008/mk-naked-shell";
       flake = false;
     };
 

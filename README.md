@@ -13,23 +13,23 @@ Documentation for `master` branch is on [flake-parts website](https://flake.part
 (alternatively, read options directly in [`src/interface.nix`](./src/interface.nix) and [`src/modules`](./src/modules)).
 
 Examples can be found at [`examples`](./examples) directory.
-Also see the [discussions](https://github.com/yusdacra/nix-cargo-integration/discussions) for answers to possible questions.
+Also see the [discussions](https://github.com/90-008/nix-cargo-integration/discussions) for answers to possible questions.
 
 Important (mostly breaking) changes can be found in [`CHANGELOG.md`](./CHANGELOG.md).
 
 ## Installation
 
-Run `nix flake init -t github:yusdacra/nix-cargo-integration` to initialize a simple `flake.nix`.
+Run `nix flake init -t github:90-008/nix-cargo-integration` to initialize a simple `flake.nix`.
 
-You can also run `nix flake init -t github:yusdacra/nix-cargo-integration#simple-crate` to initialize a Cargo crate alongside the `flake.nix`,
-or `nix flake init -t github:yusdacra/nix-cargo-integration#simple-workspace` for a Cargo workspace with a `flake.nix`.
+You can also run `nix flake init -t github:90-008/nix-cargo-integration#simple-crate` to initialize a Cargo crate alongside the `flake.nix`,
+or `nix flake init -t github:90-008/nix-cargo-integration#simple-workspace` for a Cargo workspace with a `flake.nix`.
 
 If you already have a `flake.nix` with `flake-parts` setup, just add NCI to inputs:
 
 ```nix
 {
   # ...
-  inputs.nci.url = "github:yusdacra/nix-cargo-integration";
+  inputs.nci.url = "github:90-008/nix-cargo-integration";
   # ...
 }
 ```
@@ -67,7 +67,7 @@ Run `nix run .#generate-lockfiles` to generate lockfiles for projects that don't
 ```
 
 A neat fix for that is to track the path to `Cargo.lock` without staging it
-([thanks to @bew](https://github.com/yusdacra/nix-cargo-integration/issues/46#issuecomment-962589582)).
+([thanks to @bew](https://github.com/90-008/nix-cargo-integration/issues/46#issuecomment-962589582)).
 
 ```console
 $ git add --intent-to-add Cargo.lock
