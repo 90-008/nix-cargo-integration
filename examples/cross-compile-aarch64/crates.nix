@@ -14,7 +14,7 @@
       targets."aarch64-unknown-linux-gnu" = let
         targetPkgs = pkgs.pkgsCross.aarch64-multiplatform;
         targetCC = targetPkgs.stdenv.cc;
-        targetCargoEnvVarTarget = targetPkgs.hostPlatform.rust.cargoEnvVarTarget;
+        targetCargoEnvVarTarget = targetPkgs.stdenv.hostPlatform.rust.cargoEnvVarTarget;
       in rec {
         default = true;
         depsDrvConfig.mkDerivation = {
