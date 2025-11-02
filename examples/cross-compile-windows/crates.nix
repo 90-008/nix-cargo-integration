@@ -23,7 +23,7 @@
       targets."x86_64-pc-windows-gnu" = let
         targetPkgs = pkgs.pkgsCross.mingwW64;
         targetCC = targetPkgs.stdenv.cc;
-        targetCargoEnvVarTarget = targetPkgs.hostPlatform.rust.cargoEnvVarTarget;
+        targetCargoEnvVarTarget = targetPkgs.stdenv.hostPlatform.rust.cargoEnvVarTarget;
         # we have to wrap wine so that HOME is set to somewhere that exists
         wineWrapped = pkgs.writeScript "wine.sh" ''
           #!${pkgs.stdenv.shell}
