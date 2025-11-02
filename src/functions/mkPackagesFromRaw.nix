@@ -49,7 +49,10 @@
               depsDrv = l.mkMerge [
                 profileConf.depsDrvConfig
                 targetConf.depsDrvConfig
-                {env.CARGO_BUILD_TARGET = target;}
+                {
+                  mkDerivation.dontPatchShebangs = true;
+                  env.CARGO_BUILD_TARGET = target;
+                }
               ];
             };
           }
